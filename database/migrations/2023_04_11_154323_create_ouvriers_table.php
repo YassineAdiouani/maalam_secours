@@ -17,11 +17,12 @@ return new class extends Migration
             $table->id();
             $table->string('nom',30);
             $table->string('prenom',30);
+            $table->date('Birth');
             $table->string('address',100);
-            $table->string('address2',100)->nullable();
             $table->enum('sexe',['male','famale','autre'])->default('male');
             $table->string('ville',30);
             $table->string('cin');
+            $table->string('Experience');
             $table->string('bio')->nullable();
             $table->string('profile_url')->nullable();
             $table->string('phone',13);
