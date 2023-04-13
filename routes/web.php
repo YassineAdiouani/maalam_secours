@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'home');
-Route::view('/register', 'register');
-Route::view('/regi', 'register2');
+Route::view('/register', 'Auth.register');
+Route::view('/regi', 'Auth.register2');
+Route::view('/login', 'Auth.login');
